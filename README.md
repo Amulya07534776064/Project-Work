@@ -48,7 +48,7 @@ The best-performing model achieved [X% accuracy] in predicting customer churn. D
 DATA SECURITY & ETHICAL CONSIDERATIONS:
 The dataset used does not contain sensitive information. All data is stored securely using Google Cloud and shared via secure methods. Ethical guidelines were strictly followed during data collection and processing.
 
-EFERENCES:
+REFERENCES:
 Cheong, H. et al. (2023). Secondary Qualitative Research Methodology Using Online Data within the Context of Social Sciences.
 Shobana, J. et al. (2023). E-commerce customer churn prevention using machine learning-based business intelligence strategy.
 Xiahou, X. and Harada, Y. (2022). B2C E-Commerce Customer Churn Prediction Based on K-Means and SVM.
