@@ -44,17 +44,21 @@ MACHINE LEARNING MODELS APPLIED:
 2.	Decision Tree
 3.	Random Forest
 4.	Gradient Boosting
+
 MODELING PHASES:
 1.	Models applied to imbalanced data.
 2.	Models applied to balanced data using Random Oversampling.
 3.	Models applied to balanced data using SMOTE.
+
 FEATURE SELECTION:
 Feature selection methods were used to save time and space by removing unnecessary columns:
 1.	Correlation-based selection.
 2.	Chi-Square-based selection.
+
 POST-FEATURE SELECTION:
 1.	Models were reapplied three times as above (imbalanced, balanced with Random Oversampling, balanced with SMOTE).
 2.	Hyperparameter tuning was performed on Logistic Regression.
+
 RESULTS:
 1.	In imbalanced data after feature selection, the performance of the Decision Tree was affected the most, while other algorithms performed well. Selected features were effective.
 2.	For balanced data (Random Oversampling and SMOTE), no major accuracy changes were observed.
