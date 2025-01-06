@@ -1,54 +1,58 @@
 # E-Commerce Churn Prediction
 PROJECT OVERVIEW:
-This project aims to predict customer churn in the ecommerce sector using machine learning models. Customer churn refers to the phenomenon of customers stopping their engagement with a business. Identifying the factors that lead to churn and predicting it in advance can help ecommerce businesses improve customer retention strategies.
-
-The project focuses on using various machine learning algorithms to analyze customer behavior, identify potential churn factors, and predict which customers are likely to stop using the platform.
-
-PROJECT OBJECTIVE:
-Identify key factors causing customer churn in the ecommerce industry.
-Understand the impact of customer churn on business performance.
-Perform Exploratory Data Analysis (EDA) to gain insights from the dataset.
-Build and evaluate machine learning models to predict customer churn.
-Suggest strategies to improve customer retention.
-
+This project will use machine learning models to predict whether or not customers in the e-commerce commodity will experience a churn. Customer churn occurs when a customer stops engaging with the business. By knowing the reasons for churn and predicting them beforehand, e-commerce businesses could then offer their customers better retention strategies.
+PURPOSE:
+Predicting customer churn through machine learning models is a key strategy for e-commerce businesses. Most major strategies revolve around customer retention, and a high churn rate significantly affects revenue. Therefore, machine learning models are used to predict customer churn through various features.
 DATASET:
-The dataset used in this project is sourced from Kaggle, containing customer information and engagement patterns from an ecommerce platform. Key variables include:
-Gender
-City Tier
-Distance from Home
-Login Device
-Number of Devices Registered
-Satisfaction Score
-Marital Status
-Order Frequency
-Cashback Amount
-The dataset has 5630 rows and around 20 columns.
-
+"E-Commerce Customer Churn" dataset contains customer churn information against various attributes. The dataset can be found using the link: Kaggle Dataset. This dataset includes:
+•	Gender
+•	Mode of Payment
+•	Satisfaction Score
+•	Cashback Rate
+•	And a lot more
 TECHNOLOGIES USED:
-Python: Programming language
-Jupyter Notebook: For code development and testing
-Pandas, NumPy: Data manipulation
-Matplotlib, Seaborn: Data visualization
-Scikit-learn: Machine learning models
-
-APPROACH:
-Data Collection: The dataset was collected from Kaggle.
-Data Cleaning & Preprocessing: Removing duplicates, handling missing values, and feature engineering.
-EDA: Visualizing the data to identify patterns and relationships.
-Model Building: Training various machine learning models like:
-Logistic Regression
-Decision Tree
-Random Forest
-Support Vector Machine (SVM)
-Model Evaluation: Comparing models based on accuracy, precision, recall, and F1-score.
-
+•	Python: Programming language.
+•	Jupyter Notebook: For code development and testing.
+•	Pandas, NumPy: For data manipulation.
+•	Matplotlib, Seaborn: For data visualization.
+•	Scikit-learn: For building and evaluating machine learning models.
+EXPLORATORY DATA ANALYSIS(EDA):
+1. Customer Churn: 
+•	16.7% of all customers leave the platform.
+2. Payment Mode: 
+•	Cash on Delivery customers have a higher churn rate. 
+•	Debit cardholders have the least churn. 
+3. Gender: 
+•	Males are more in numbers and have a greater churn rate compared to females. 
+4. Preferred Order Category:
+•	A greater churn rate is noticed in customers who buy mobile phones. 
+•	There is no churn in the grocery segment. 
+5. City Impact: 
+•	People from City Tier 2 churn at a greater rate. 
+•	Cities in Tier 1 demonstrate minimum churn. 
+6. Satisfaction Score: 
+•	The customers with 1 and 2 levels of satisfaction exhibit the highest churn rates. 
+7. Number of Registered Devices: 
+•	Customers with more than 5 registered devices show a higher churn rate. 
+MACHINE LEARNING MODELS APPLIED:
+1.	Logistic Regression
+2.	Decision Tree
+3.	Random Forest
+4.	Gradient Boosting
+MODELING PHASES:
+1.	Models applied to imbalanced data.
+2.	Models applied to balanced data using Random Oversampling.
+3.	Models applied to balanced data using SMOTE.
+FEATURE SELECTION:
+Feature selection methods were used to save time and space by removing unnecessary columns:
+1.	Correlation-based selection.
+2.	Chi-Square-based selection.
+POST-FEATURE SELECTION:
+1.	Models were reapplied three times as above (imbalanced, balanced with Random Oversampling, balanced with SMOTE).
+2.	Hyperparameter tuning was performed on Logistic Regression.
 RESULTS:
-The best-performing model achieved [X% accuracy] in predicting customer churn. Detailed evaluation metrics and visualizations can be found in the notebooks/ directory.
-
-DATA SECURITY & ETHICAL CONSIDERATIONS:
-The dataset used does not contain sensitive information. All data is stored securely using Google Cloud and shared via secure methods. Ethical guidelines were strictly followed during data collection and processing.
-
-REFERENCES:
-Cheong, H. et al. (2023). Secondary Qualitative Research Methodology Using Online Data within the Context of Social Sciences.
-Shobana, J. et al. (2023). E-commerce customer churn prevention using machine learning-based business intelligence strategy.
-Xiahou, X. and Harada, Y. (2022). B2C E-Commerce Customer Churn Prediction Based on K-Means and SVM.
+1.	In imbalanced data after feature selection, the performance of the Decision Tree was affected the most, while other algorithms performed well. Selected features were effective.
+2.	For balanced data (Random Oversampling and SMOTE), no major accuracy changes were observed.
+3.	Feature removal led to no significant accuracy drop, confirming that the removed features were unnecessary.
+4.	Hyperparameter tuning improved Logistic Regression performance.
+5.	Accuracy of all models was checked after removing one feature at a time.
