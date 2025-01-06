@@ -1,8 +1,10 @@
 # E-Commerce Churn Prediction
 PROJECT OVERVIEW:
 This project will use machine learning models to predict whether or not customers in the e-commerce commodity will experience a churn. Customer churn occurs when a customer stops engaging with the business. By knowing the reasons for churn and predicting them beforehand, e-commerce businesses could then offer their customers better retention strategies.
+
 PURPOSE:
 Predicting customer churn through machine learning models is a key strategy for e-commerce businesses. Most major strategies revolve around customer retention, and a high churn rate significantly affects revenue. Therefore, machine learning models are used to predict customer churn through various features.
+
 DATASET:
 "E-Commerce Customer Churn" dataset contains customer churn information against various attributes. The dataset can be found using the link: Kaggle Dataset. This dataset includes:
 •	Gender
@@ -10,12 +12,14 @@ DATASET:
 •	Satisfaction Score
 •	Cashback Rate
 •	And a lot more
+
 TECHNOLOGIES USED:
 •	Python: Programming language.
 •	Jupyter Notebook: For code development and testing.
 •	Pandas, NumPy: For data manipulation.
 •	Matplotlib, Seaborn: For data visualization.
 •	Scikit-learn: For building and evaluating machine learning models.
+
 EXPLORATORY DATA ANALYSIS(EDA):
 1. Customer Churn: 
 •	16.7% of all customers leave the platform.
@@ -34,6 +38,7 @@ EXPLORATORY DATA ANALYSIS(EDA):
 •	The customers with 1 and 2 levels of satisfaction exhibit the highest churn rates. 
 7. Number of Registered Devices: 
 •	Customers with more than 5 registered devices show a higher churn rate. 
+
 MACHINE LEARNING MODELS APPLIED:
 1.	Logistic Regression
 2.	Decision Tree
